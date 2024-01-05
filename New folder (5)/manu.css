@@ -1,0 +1,35 @@
+.menu2 {
+    background-color: #fffefe;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .manucoffee{
+    color: #000000;
+    text-align: center;
+  }
+
+  .manu h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  .item {
+    margin-bottom: 15px;
+  }
+
+  .item h3 {
+    margin: 5px 0;
+    color: #555;
+  }
+
+  .item p {
+    margin: 0;
+    color: #777;
+  }
+
+  .price {
+    font-weight: bold;
+    color: #333;
+  }
+  

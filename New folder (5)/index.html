@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="manu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Pacifico&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+      body{
+      background-color: #e4e4e4;
+      top: 0;
+      bottom: 0;
+      margin: 0;
+      padding: 0;
+      background-color: #b9aa29;
+      }
+      .background{
+        background-image: url(./images/main-bcg4.jpg);
+        /* height: 100vh; */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        /* border: 2px solid red; */
+    /* display: flex; */
+    justify-content: center;
+    /* margin: 25px; */
+    align-items: center;
+    /* background-image: url(thumb-1920-1329876.png); */
+    height: 100vh;
+    background-attachment: fixed;
+   background-size: cover;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    /* margin-bottom: 1700px; */
+    /* filter:grayscale(100px); */
+    /* border: 5px solid orange; */
+      }
+       
+        
+        @keyframes slideIn {
+          from {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          to {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+    
+        .animated-text {
+          animation: slideIn 5s ease-out;
+          font-size: xx-large;
+          font-family: 'Times New Roman', Times, serif;
+          color: orange;
+          font-family: 'Ephesis', cursive;
+          /* height: 70px; */
+        }
+    
+        body {
+          /* font-family: 'Arial', sans-serif;
+          padding: 20px;
+          text-align: center;
+          margin-top: 200px; */
+          color: #fff;
+        }
+        @keyframes slideout {
+          from {
+            transform: translateX(100%);
+            opacity: 0;
+          }
+          to {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+    
+        .animated-text1 {
+          animation: slideout 5s ease-out;
+          font-size: larger;
+          /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+          font-size: xx-large;
+          color: #ffffff;
+          font-family: 'Pacifico', cursive;
+        }
+    
+        .background {
+          /* font-family: 'Arial', sans-serif; */
+          padding: 0px;
+          padding-top: 50px;
+          text-align: center;
+          margin-top: 0px;
+         
+        }
+        /* for button */
+        @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-20px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+   
+
+
+    .explore-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 18px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #f8c212;
+      border-radius: 5px;
+      border: 5px solid orange;
+      cursor: pointer;
+      animation: bounce 2s infinite;
+    justify-content: center;
+    animation: bounce 5s infinite;
+    }
+    
+    /* product */
+    section {
+      padding: 0px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .product {
+      background-color: #fff;
+      padding: 20px;
+      margin: 30px;
+      width: 300px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .product p{
+      color: black;
+
+    }
+    .product h2{
+      color: black;
+    }
+    /* nav */
+    nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+   
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 15px;
+  }
+
+  nav a:hover {
+    /* text-decoration: underline; */
+    color: orange;
+    
+
+  }
+  /* text ani2 */
+   /* text animation */
+   @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+       #text{
+            opacity: 0;
+            animation: fadeInUp 4s ease-out forwards;
+        }
+        #text{
+          font-family: 'Pacifico', cursive;
+            font-size: xx-large;
+            color: orange;
+            background-color: rgba(0, 0, 0, 0);
+            text-transform: uppercase;
+        }
+.black{
+  color: rgba(0, 0, 0, 0.26), 0, 0;
+}
+/* image gallery */
+.gallery {
+            background-color: rgb(250, 250, 250);
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 100px;
+            padding: 200px;
+            border: 5px solid orange;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.2s;
+           
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+        h1{
+            color: rgb(2, 2, 2);
+            text-align: center;
+            padding: 0;
+        }
+        article{
+          
+          padding:0px;
+          text-align: justify;
+          padding-bottom: 0;
+          border-radius: 9px;
+          
+          
+        }
+        article>h1{
+          color: rgb(0, 0, 0);
+          font: bold;
+          text-transform: uppercase;
+          
+        }
+        article>h2{
+          color: black;
+        }
+
+      </style>
+    </head>
+    <body>
+      <nav>
+        <a href="#"><i class="fas fa-home"></i> </a>
+        <a href="#"><i class="fas fa-coffee"></i> </a>
+        <a href="#"><i class="fas fa-info-circle"></i> </a>
+        <a href="#"><i class="fas fa-envelope"></i> </a>
+      </nav>
+      
+      <div class="background">
+        <h1 class="animated-text">Over One Hundred Flavors Of</h1>
+      <h2 class="animated-text1">SPECIALLY<h2>
+      </h2>
+      <h2 class="animated-text1"> HANDCRAFTED ESPRESSO</h2>
+      <div id="text">hey how are you</div><br>
+      <br>
+      <br>
+        <a href="#" class="explore-btn">Explore</a>
+      </div>
+
+    
+      
+
+
+        <!-- product -->
+        <section>
+            <div class="product">
+              <img src="./images/product-2.jpeg" alt="Product 1" height="350px" width="300px">
+              <h2>Cappuccino</h2>
+              <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>$19.99</p>
+              <button>Add to Cart</button>
+            </div>
+        
+            <div class="product">
+              <img src="./images/product-1.jpeg" alt="Product 2">
+              <h2>Espresso</h2>
+              <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>$29.99</p>
+              <button>Add to Cart</button>
+            </div>
+        
+            <!-- Add more product entries as needed -->
+        
+          </section>
+          <!-- manu -->
+          <div class="menu2">
+            <h1 class="manucoffee">Coffee Menu</h1>
+        
+            <div class="item">
+              <h3>Espresso</h3>
+              <p>A strong black coffee.</p>
+              <p class="price">$2.50</p>
+            </div>
+        
+            <div class="item">
+              <h3>Americano</h3>
+              <p>Espresso with added hot water.</p>
+              <p class="price">$3.00</p>
+            </div>
+        
+            <div class="item">
+              <h3>Cappuccino</h3>
+              <p>Espresso with steamed milk and a layer of frothed milk.</p>
+              <p class="price">$4.00</p>
+            </div>
+        
+            <div class="item">
+              <h3>Latte</h3>
+              <p>Espresso with steamed milk.</p>
+              <p class="price">$3.50</p>
+            </div>
+        
+            <div class="item">
+              <h3>Mocha</h3>
+              <p>Espresso with steamed milk and chocolate.</p>
+              <p class="price">$4.50</p>
+            </div>
+        
+          </div>
+          <h1>
+            Image gallery
+          </h1>
+   
+          <div class="gallery">
+            <div class="gallery-item">
+               <a href=""> <img src="./images/product-1.jpeg" alt="Image 1"></a>
+               <h1>Cappuccino</h1>
+               <h1>49$</h1>
+
+            </div>
+            <div class="gallery-item">
+                <a href=""><img src="./images/product-2.jpeg" alt="Image 2"></a>
+               <h1>Latte</h1>
+               <h1>150$</h1>
+            </div>
+            <div class="gallery-item">
+              <a href=""><img src="./images/product-3.jpeg" alt="Image 3"></a>
+              <h1>Mocha</h1>
+              <h1>195$</h1>
+            </div>
+            <!-- Add more images here -->
+        </div>
+          
+           <br>
+        <article class="article">
+          <h1 >our customers from</h1>
+          
+        </article>
+
+        <!-- from section -->
+        <div id="back">
+        <header>
+          <h1>Coffee Shop Order Form</h1>
+          <p>Please fill out the form to place your order.</p>
+      </header>
+  
+      <form action="" method="post">
+  
+          <section>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" >
+          </section>
+  
+          <section>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" >
+          </section>
+  
+          <section>
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" >
+          </section>
+  
+          <section>
+              <label for="coffee">Coffee Selection:</label>
+              <select id="coffee" name="coffee" >
+                  <option value="espresso">Espresso</option>
+                  <option value="latte">Latte</option>
+                  <option value="cappuccino">Cappuccino</option>
+                  <option value="americano">Americano</option>
+              </select>
+          </section>
+  
+          <section>
+              <label for="size">Size:</label>
+              <input type="radio" id="small" name="size" value="small" required>
+              <label for="small">Small</label>
+  
+              <input type="radio" id="medium" name="size" value="medium">
+              <label for="medium">Medium</label>
+  
+              <input type="radio" id="large" name="size" value="large">
+              <label for="large">Large</label>
+          </section>
+  
+          <section>
+              <label for="extras">Extras:</label>
+              <input type="checkbox" id="sugar" name="extras[]" value="sugar">
+              <label for="sugar">Sugar</label>
+  
+              <input type="checkbox" id="cream" name="extras[]" value="cream">
+              <label for="cream">Cream</label>
+          </section>
+  
+          <section>
+              <label for="notes">Additional Notes:</label>
+              <textarea id="notes" name="notes" rows="4"></textarea>
+          </section>
+  
+          <button type="submit">Place Order</button>
+  
+      </form>
+    </div>
+     
+<!-- footer -->
+
+
+<footer>
+  <div class="footer-content">
+      <div class="contact-info">
+          <h3>Contact Us</h3>
+          <p>Email: arkapal@coffeeshop.com</p>
+          <p>Phone: 7044788801</p>
+          <p>Address: 122 Coffee Street, Cityville</p>
+      </div>
+
+      <div class="social-media">
+          <h3>Follow Us</h3>
+          <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+  </div>
+
+  <p class="copyright">&copy; 2023 Coffee Shop</p>
+</footer>
+
+    </body>
+</html>
